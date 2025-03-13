@@ -18,12 +18,42 @@ body {
     color: #5C6AC4;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza no eixo horizontal */
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.header-container div {
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    clip-path: circle(50% at 50% 50%);
+    border: 3px solid #8ab4f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
 /* Header and Footer */
 header, footer {
     background-color: #2a2a2a;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    border-top: 2px solid #444;
 }
 
 footer p {
@@ -39,17 +69,19 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
     color: #8ab4f8;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 nav ul li a:hover {
     color: #fff;
+    transform: scale(1.1);
 }
 
 /* Hero Section */
@@ -59,6 +91,7 @@ nav ul li a:hover {
     background-color: #333;
     color: #c4c4c4;
     border-bottom: 2px solid #444;
+    border-radius: 8px;
 }
 
 .hero h1 {
@@ -78,6 +111,11 @@ nav ul li a:hover {
     background: #2a2a2a;
     margin-bottom: 20px;
     border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-5px);
 }
 
 .section h2 {
@@ -91,6 +129,9 @@ nav ul li a:hover {
 /* Projects */
 .projects .project-item {
     margin-bottom: 20px;
+    padding: 15px;
+    background: #383838;
+    border-radius: 6px;
 }
 
 .projects .project-item h3 {
@@ -106,8 +147,32 @@ nav ul li a:hover {
 .contact a {
     color: #8ab4f8;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
 .contact a:hover {
     text-decoration: underline;
+    color: #fff;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
 }
