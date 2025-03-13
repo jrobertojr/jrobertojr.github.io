@@ -1,6 +1,113 @@
-body{
-  padding: 25px;
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 25px;
+    background-color: #1e1e1e;
+    color: #c4c4c4;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Typography */
 .title {
-	color: #5C6AC4;
+    color: #5C6AC4;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #a0a0a0;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #8ab4f8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #333;
+    color: #c4c4c4;
+    border-bottom: 2px solid #444;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #a0a0a0;
+}
+
+/* Sections */
+.section {
+    padding: 40px 20px;
+    background: #2a2a2a;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.section h2 {
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    color: #8ab4f8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Projects */
+.projects .project-item {
+    margin-bottom: 20px;
+}
+
+.projects .project-item h3 {
+    margin: 0;
+    color: #c4c4c4;
+}
+
+.projects .project-item p {
+    color: #a0a0a0;
+}
+
+/* Contact */
+.contact a {
+    color: #8ab4f8;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
