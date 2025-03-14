@@ -114,9 +114,10 @@ nav ul li a:hover {
     transition: transform 0.3s;
 }
 
+/*
 .section:hover {
     transform: translateY(-5px);
-}
+*/
 
 .section h2 {
     border-bottom: 1px solid #444;
@@ -156,7 +157,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Media Queries para Responsividade */
+Media Queries para Responsividade 
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
