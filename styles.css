@@ -162,7 +162,7 @@ nav ul li a:hover {
     .profile-pic {
         width: 100px;
         height: 100px;
-        order: -1; /* Coloca a imagem acima do nome */
+        order: 1; /* Coloca a imagem acima do nome */
     }
 
     nav ul {
