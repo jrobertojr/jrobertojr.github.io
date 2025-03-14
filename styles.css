@@ -43,7 +43,6 @@ body {
 }
 
 .profile-pic:hover {
-    transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
 
@@ -114,11 +113,6 @@ nav ul li a:hover {
     transition: transform 0.3s;
 }
 
-/*
-.section:hover {
-    transform: translateY(-5px);
-*/
-
 .section h2 {
     border-bottom: 1px solid #444;
     padding-bottom: 10px;
@@ -157,7 +151,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-Media Queries para Responsividade 
+/* Media Queries para Responsividade */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -175,5 +169,16 @@ Media Queries para Responsividade
 
     .hero h1 {
         font-size: 2em;
+    }
+
+    .section {
+        width: 100vw;
+        margin: 0; 
+        padding: 20px 0; /* Mantém o padding apenas no topo e na base */
+        border-radius: 0; /* Remove os cantos arredondados, se quiser */
+    }
+    
+    .container {
+        padding: 0; /* Remove o padding lateral do container em mobile */
     }
 }
