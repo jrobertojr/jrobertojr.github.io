@@ -154,13 +154,14 @@ nav ul li a:hover {
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
     .header-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
     .profile-pic {
         width: 100px;
         height: 100px;
+        order: -1; /* Coloca a imagem acima do nome */
     }
 
     nav ul {
@@ -169,16 +170,5 @@ nav ul li a:hover {
 
     .hero h1 {
         font-size: 2em;
-    }
-
-    .section {
-        width: 100vw;
-        margin: 0; 
-        padding: 20px 0; /* Mantém o padding apenas no topo e na base */
-        border-radius: 0; /* Remove os cantos arredondados, se quiser */
-    }
-    
-    .container {
-        padding: 0; /* Remove o padding lateral do container em mobile */
     }
 }
