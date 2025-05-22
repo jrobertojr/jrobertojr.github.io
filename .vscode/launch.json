@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open index.html in Opera GX", // Novo nome para a configuração
+            "file": "${workspaceFolder}/index.html", // <--- Use "file" em vez de "url" para arquivos locais
+            "runtimeExecutable": "C:\\Program Files\\Opera GX\\opera.exe" // <--- Seu caminho para o Opera GX
+            // Opcional: Remova "webRoot" se não estiver depurando JavaScript complexo
+            // Opcional: Adicione "runtimeArgs": ["--remote-debugging-port=9222"] se quiser depurar JavaScript
+        }
+    ]
+}
